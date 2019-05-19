@@ -1,0 +1,78 @@
+@import 'vars';
+@import 'contact';
+@import 'gallery';
+@import 'about';
+
+body {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+section {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  .bottom-bar {
+    height: 15vh;
+    background: $menu-overlay;
+    position: relative;
+    top: 85%;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .menu-gallery {
+    height: 100%;
+    background-image: url('../img/gallery.jpg');
+    background-size: cover;
+    background-position: center;
+
+    &:hover {
+      @include easeOut();
+      opacity: 0.9;
+    }
+
+    // a {
+    //   height: 100%;
+    //   width: 100%;
+    //   position: relative;
+    //   margin: 0;
+    //   padding: 0;
+    // }
+  }
+  .menu-about {
+    background-image: url('../img/about.jpeg');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+
+    &:hover {
+      @include easeOut();
+      opacity: 0.9;
+    }
+  }
+  .menu-contact {
+    background-image: url('../img/contact.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+
+    &:hover {
+      @include easeOut();
+      opacity: 0.9;
+    }
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    font-family: $main-font;
+    text-align: center;
+    color: rgb(206, 206, 206);
+    margin: 0;
+    padding: 3rem 2rem;
+  }
+}

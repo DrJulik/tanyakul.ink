@@ -1,0 +1,112 @@
+.gallery {
+  display: grid;
+  grid-template-columns: 20vw 80vw;
+  grid-template-rows: 10vh 90vh;
+  grid-template-areas:
+    'image nav'
+    'image main';
+  overflow-y: scroll;
+}
+
+.gallery-nav {
+  display: flex;
+  grid-area: nav;
+  width: 100%;
+  background: url('/img/prism.png');
+  // background: rgb(255, 255, 255);
+  // background: linear-gradient(
+  //   180deg,
+  //   rgba(214, 214, 214, 0.329) 0%,
+  //   rgba(255, 255, 255, 1) 100%
+  // );
+  border-bottom: #9c4f49 3px solid;
+  .logo {
+    margin-left: 4rem;
+    font-size: 2.5rem;
+    font-family: $main-font;
+    flex: 70%;
+    color: rgb(235, 235, 235);
+  }
+
+  .nav {
+    flex: 1 30%;
+    display: flex;
+    margin: 1rem 6rem 1rem 0;
+
+    .nav-item {
+      list-style: none;
+      margin: 0.7rem;
+
+      a {
+        text-decoration: none;
+        font-size: 2.5rem;
+        color: rgb(255, 255, 255);
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
+
+#active {
+  color: rgb(255, 255, 255);
+  border-top: 3px solid #9c4f49;
+  border-bottom: 3px solid #9c4f49;
+
+  &:hover {
+    opacity: 0.7;
+    @include easeOut();
+  }
+}
+
+.gallery-info {
+  grid-area: main;
+  // background: rgba(235, 235, 235, 0.5);
+
+  .container {
+    margin: 3em 4em;
+
+    .work {
+      display: grid;
+      grid-gap: 1em;
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+
+      img {
+        opacity: 0.9;
+        border-bottom: #9c4f49 2px solid;
+        border-right: #9c4f49 2px solid;
+        // border-top: #9c4f49 1px solid;
+        // border-left: #9c4f49 1px solid;
+        width: 440px;
+        height: 300px;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
+
+.gallery-image {
+  position: fixed;
+  opacity: 0.8;
+  grid-area: image;
+  background: url('/img/gallery.jpg');
+  width: calc(20% + 3px);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-right: #9c4f49 2px solid;
+
+  h1 {
+    color: #ffebd9;
+    position: absolute;
+    z-index: 1;
+    left: 24%;
+    bottom: 4%;
+    font-size: 4rem;
+  }
+}
