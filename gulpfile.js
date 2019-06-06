@@ -28,8 +28,8 @@ function style() {
       // Now add/write the sourcemaps
       .pipe(sourcemaps.write())
       .pipe(gulp.dest(paths.styles.dest))
-      // Add browsersync stream pipe after compilation
-      .pipe(browserSync.stream())
+    // Add browsersync stream pipe after compilation
+    // .pipe(browserSync.stream())
   );
 }
 
@@ -43,7 +43,7 @@ function watch() {
   browserSync.init({
     // You can tell browserSync to use this directory and serve it as a mini-server
     server: {
-      proxy: 'yourlocal.dev'
+      baseDir: './src'
     }
     // If you are already serving your website locally using something like apache
     // You can use the proxy setting to proxy that instead
