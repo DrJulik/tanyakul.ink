@@ -19,6 +19,7 @@ body {
       color: #9c4f49;
       text-decoration: none;
       font-size: 1.4rem;
+      margin: 0.5rem;
 
       &:hover {
         opacity: 0.7;
@@ -44,7 +45,7 @@ body {
   }
 
   .secondary-heading {
-    font-size: 2.7rem;
+    font-size: 1.8rem;
     position: absolute;
     top: 38%;
     margin-bottom: 1rem;
@@ -55,7 +56,7 @@ body {
 
   // THE BUTTON
   svg {
-    width: 6.5em;
+    width: 6.3em;
     position: absolute;
     top: 77vh;
     left: 50vw;

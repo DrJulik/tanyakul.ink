@@ -28,8 +28,8 @@ function style() {
       // Now add/write the sourcemaps
       .pipe(sourcemaps.write())
       .pipe(gulp.dest(paths.styles.dest))
-    // Add browsersync stream pipe after compilation
-    // .pipe(browserSync.stream())
+      // Add browsersync stream pipe after compilation
+      .pipe(browserSync.stream())
   );
 }
 
