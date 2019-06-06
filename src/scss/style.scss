@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'contact';
 @import 'gallery';
+@import 'gallery.1';
 @import 'about';
 
 body {
@@ -71,7 +72,7 @@ section {
     font-size: 3.5rem;
     font-family: $main-font;
     text-align: center;
-    color: rgb(206, 206, 206);
+    color: rgb(224, 224, 224);
     margin: 0;
     padding: 3rem 2rem;
   }
