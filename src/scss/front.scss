@@ -35,6 +35,7 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
+  overflow-y: hidden;
 
   .primary-heading {
     font-size: 2.2rem;
