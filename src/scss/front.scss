@@ -9,7 +9,6 @@ body {
   font-family: 'Cinzel', serif;
   font-size: 35px;
   cursor: default;
-  overflow: hidden;
 
   .icons {
     position: absolute;
@@ -36,6 +35,7 @@ body {
   background-size: cover;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 
   .primary-heading {
     font-size: 2rem;
