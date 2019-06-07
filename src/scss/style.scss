@@ -20,6 +20,19 @@ body {
     background: $menu-overlay;
     position: relative;
     top: 85%;
+
+    h1 {
+      font-size: 3.5rem;
+      font-family: $main-font;
+      text-align: center;
+      color: rgb(224, 224, 224);
+      margin: 0;
+      padding: 3rem 2rem;
+    }
+  }
+
+  .mobile-text {
+    display: none;
   }
 
   a {
@@ -36,20 +49,11 @@ body {
       @include easeOut();
       opacity: 0.9;
     }
-
-    // a {
-    //   height: 100%;
-    //   width: 100%;
-    //   position: relative;
-    //   margin: 0;
-    //   padding: 0;
-    // }
   }
   .menu-about {
     background-image: url('../img/about.jpeg');
     background-size: cover;
     background-position: center;
-    z-index: 1;
 
     &:hover {
       @include easeOut();
@@ -67,15 +71,6 @@ body {
       opacity: 0.9;
     }
   }
-
-  h1 {
-    font-size: 3.5rem;
-    font-family: $main-font;
-    text-align: center;
-    color: rgb(224, 224, 224);
-    margin: 0;
-    padding: 3rem 2rem;
-  }
 }
 
 @media (max-width: 700px) {
@@ -85,6 +80,16 @@ body {
 
     .bottom-bar {
       display: none;
+    }
+
+    .mobile-text {
+      display: block;
+      font-size: 3rem;
+      font-family: $main-font;
+      text-align: center;
+      color: rgb(224, 224, 224);
+      margin: 0;
+      padding: 5rem 2rem;
     }
   }
 }
