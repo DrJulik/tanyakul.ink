@@ -14,7 +14,7 @@
   <body class="gallery2">
     <nav class="gallery-nav2">
       <h1 class="logo2">Tanya K.</h1>
-      <button class="menu-toggle"></button>
+      <button class="menu-toggle" id="menu-toggle">toggle menu</button>
       <ul class="nav2">
         <li class="nav-item2">
           <a href="gallery.html" id="active" class="nav-link2">Gallery</a>
@@ -24,6 +24,19 @@
         </li>
         <li class="nav-item2">
           <a href="contact.html" class="nav-link2">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="menu-dropdown">
+      <ul class="nav-menu" id="menu-dropdown">
+        <li>
+          <a href="gallery.1.html">Gallery</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
         </li>
       </ul>
     </nav>
@@ -55,5 +68,15 @@
     ></script>
     <script src="https://cdn.jsdelivr.net/gh/andreknieriem/simplelightbox@master/dist/simple-lightbox.min.js"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+      (function() {
+        var button = document.getElementById('menu-toggle');
+        button.addEventListener('click', function(event) {
+          event.preventDefault();
+          var menu = document.getElementById('menu-dropdown');
+          menu.classList.toggle('is-open');
+        });
+      })();
+    </script>
   </body>
 </html>
