@@ -68,7 +68,7 @@
     .work2 {
       display: grid;
       grid-gap: 1em;
-      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
 
       img {
         opacity: 0.8;
@@ -83,6 +83,34 @@
 
         &:hover {
           opacity: 0.6;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 700px) {
+  .gallery-nav2 {
+    height: 5rem;
+    padding: 0;
+
+    .logo2 {
+      margin: 1.5rem 2rem;
+      font-size: 1.7rem;
+    }
+
+    .nav2 {
+      display: none;
+    }
+  }
+
+  .gallery-info2 {
+    .container2 {
+      margin: 3em;
+      .work2 {
+        grid-template-columns: 1fr;
+        img {
+          width: 300px;
+          height: 200px;
         }
       }
     }
