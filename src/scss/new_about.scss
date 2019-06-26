@@ -34,6 +34,12 @@
     -webkit-box-shadow: 0 0 5px #000;
     box-shadow: 0 0 5px #000;
   }
+  .card-body.second-card {
+    background: url('/img/card1.jpg');
+  }
+  .card-body.third-card {
+    background: url('/img/card2.jpg');
+  }
 }
 
 .overlay {
