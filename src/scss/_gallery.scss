@@ -114,11 +114,12 @@
       border: 0;
       background-color: transparent;
       font-size: 3rem;
-      width: 0.7em;
+      width: 0.6em;
       height: 1.1em;
       text-indent: 5em;
-      white-space: nowrap;
+      // white-space: nowrap;
       overflow: hidden;
+      padding: 0;
       outline: none;
     }
 
