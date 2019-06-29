@@ -9,6 +9,33 @@ body {
   font-family: 'Cinzel', serif;
   font-size: 35px;
   cursor: default;
+}
+
+.landing {
+  height: 100vh;
+  background-image: url('../img/landing_small2.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+
+  .primary-heading {
+    font-size: 2rem;
+    position: absolute;
+    top: 7%;
+    letter-spacing: 0.06em;
+    color: rgb(19, 19, 19);
+  }
+
+  .secondary-heading {
+    font-size: 1.8rem;
+    position: absolute;
+    top: 40%;
+    margin-bottom: 1rem;
+    color: rgb(65, 65, 65);
+  }
 
   .icons {
     position: absolute;
@@ -27,32 +54,6 @@ body {
       }
     }
   }
-}
-
-.landing {
-  height: 100vh;
-  background-image: url('../img/landing_small2.jpg');
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-
-  .primary-heading {
-    font-size: 2rem;
-    position: absolute;
-    top: 7%;
-    letter-spacing: 0.06em;
-    color: rgb(19, 19, 19);
-  }
-
-  .secondary-heading {
-    font-size: 1.8rem;
-    position: absolute;
-    top: 40%;
-    margin-bottom: 1rem;
-    color: rgb(65, 65, 65);
-  }
 
   // THE BUTTON
 
@@ -63,7 +64,8 @@ body {
     bottom: 10%;
     font-size: 1.8rem;
     font-family: 'Cinzel', cursive;
-    background: #9c4f49;
+    background: rgba(156, 79, 73, 0.8);
+    border-radius: 15%;
     color: #fff;
     text-decoration: none;
     text-align: center;
