@@ -4,12 +4,17 @@
   }
 
   .about-text {
+    h1 {
+      font-family: $headings-font;
+    }
     p {
       font-size: 1.4rem;
+      font-family: $body-font;
     }
 
     h3 {
       font-size: 1.3rem;
+      font-family: $headings-font;
     }
   }
 }
@@ -55,7 +60,7 @@
   opacity: 0;
   transition: all 0.5s;
 
-  font-family: 'Cinzel', serif;
+  font-family: $body-font;
 }
 
 .head {
