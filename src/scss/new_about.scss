@@ -79,7 +79,7 @@
   }
 }
 
-.card-body:focus .overlay {
+.card-body:hover .overlay {
   opacity: 1;
   & .head {
     transform: translateY(0px);
