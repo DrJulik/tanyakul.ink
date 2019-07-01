@@ -28,7 +28,7 @@ input {
 
   border: solid 1px #976f6f;
   border-bottom: none;
-  -webkit-appearance: none;
+
   transition: all 0.3s ease-in-out;
 
   -webkit-transition: all 0.3s ease-in-out;
@@ -77,7 +77,7 @@ textarea:hover {
   font-size: 1em;
   background: hsla(223, 23%, 70%, 0.1);
   color: rgb(0, 0, 0);
-
+  -webkit-appearance: none;
   outline: none;
   cursor: pointer;
 
