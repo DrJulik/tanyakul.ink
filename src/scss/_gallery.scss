@@ -2,7 +2,9 @@
   background: url('/img/dust_scratches.png');
   overflow-y: scroll;
 }
-
+.menu-dropdown {
+  display: none;
+}
 .gallery-nav2 {
   background: rgba(162, 172, 197, 0.2);
   display: flex;
@@ -19,13 +21,17 @@
   //   rgba(255, 255, 255, 1) 100%
   // );
   // border-bottom: #9c4f49 3px solid;
+  .menu-toggle {
+    display: none;
+  }
+
   a {
     text-decoration: none;
     color: #3d3d3d;
   }
   .logo2 {
     margin-left: 5rem;
-    margin-top: 1.6rem;
+    margin-top: 1.3rem;
     font-size: 3rem;
     font-family: $main-font;
     flex: 63%;
@@ -35,14 +41,16 @@
     flex: 1 37%;
     display: flex;
     margin: 1rem;
+    justify-content: flex-end;
 
     .nav-item2 {
       list-style: none;
-      margin: 1rem 2rem;
+      margin: 1rem 4rem 1rem 2rem;
 
       a {
         text-decoration: none;
-        font-size: 2.6rem;
+        font-size: 2.4rem;
+        font-family: $main-font;
         color: rgb(49, 49, 49);
         transition: opacity linear 0.4s;
 
@@ -91,6 +99,31 @@
     }
   }
 }
+@media (max-width: 1024px) {
+  .gallery-nav2 {
+    .logo2 {
+      font-size: 2.2rem;
+      margin-left: 3rem;
+      margin-top: 2rem;
+      flex: 60%;
+    }
+    .nav2 {
+      flex: 1 40%;
+      margin: 1.2rem 2rem 0 1rem;
+
+      .nav-item2 {
+        // list-style: none;
+        margin: 1rem;
+
+        a {
+          text-decoration: none;
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 700px) {
   .gallery-nav2 {
     height: 5rem;
@@ -121,6 +154,7 @@
       overflow: hidden;
       padding: 0;
       outline: none;
+      display: block;
     }
 
     .menu-toggle::after {
@@ -134,16 +168,9 @@
     }
   }
 
-  // .menu-dropdown {
-  //   display: none;
-  //   position: absolute;
-  //   right: 0;
-  //   left: 0;
-  //   margin: 0;
-  // }
-  // .menu-dropdown .is-open {
-  //   display: block;
-  // }
+  .menu-dropdown {
+    display: block;
+  }
 
   .nav-menu {
     position: absolute;

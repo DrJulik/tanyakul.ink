@@ -73,6 +73,26 @@ body {
   }
 }
 
+// bak to top btn
+.back-to-top {
+  display: none;
+  background: none;
+  margin: 0;
+  position: fixed;
+  bottom: 15px;
+  right: 0;
+  width: 70px;
+  height: 70px;
+  z-index: 100;
+  display: none;
+  text-decoration: none;
+  color: rgb(82, 82, 82);
+}
+
+.back-to-top i {
+  font-size: 55px;
+}
+
 @media (max-width: 700px) {
   .menu-wrapper {
     grid-template-columns: 1fr;
