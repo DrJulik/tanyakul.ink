@@ -99,6 +99,21 @@
     }
   }
 }
+@media (max-width: 1366px) {
+  .gallery-info2 {
+    .container2 {
+      .work2 {
+        grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+
+        img {
+          width: 300px;
+          height: 300px;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 1024px) {
   .gallery-nav2 {
     .logo2 {
