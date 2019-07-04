@@ -135,10 +135,15 @@ textarea:hover {
 }
 
 .head {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 20px;
   text-align: center;
+  // word-wrap: break-word;
+  // white-space: pre-line;
 
+  p {
+    width: 100%;
+  }
   // transform: translateY(40px);
   // transition: all 0.7s;
   hr {
