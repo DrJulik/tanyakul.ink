@@ -212,8 +212,8 @@
     }
     .card-body {
       // width: 280px;
-      width: 300px;
-      height: 220px;
+      width: 230px;
+      height: 270px;
 
       background: url('/img/card.jpg');
       background-color: black;
@@ -306,6 +306,15 @@
         bottom: 25%;
         left: 30%;
       }
+    }
+  }
+}
+
+@media (min-width: 1800px) {
+  .about-cards {
+    .card-body {
+      width: 320px;
+      height: 220px;
     }
   }
 }
