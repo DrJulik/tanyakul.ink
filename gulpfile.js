@@ -4,6 +4,7 @@ const gulp = require('gulp'),
   autoprefixer = require('autoprefixer'),
   cssnano = require('cssnano'),
   sourcemaps = require('gulp-sourcemaps'),
+  imagemin = require('gulp-imagemin'),
   browserSync = require('browser-sync').create();
 
 const paths = {
@@ -14,7 +15,12 @@ const paths = {
     dest: 'src/css'
   }
 };
-
+gulp.task('minify', () =>
+  gulp
+    .src('src/img/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('src/img_min'))
+);
 function style() {
   return (
     gulp

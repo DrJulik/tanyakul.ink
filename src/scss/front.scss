@@ -13,7 +13,7 @@ body {
 
 .landing {
   height: 100vh;
-  background-image: url('../img/landing_small2.jpg');
+  background-image: url('../img_min/landing_small2.jpg');
   background-position: center;
   background-size: cover;
   display: flex;
@@ -102,7 +102,7 @@ body {
 
   @media (min-width: 1200px) {
     .landing {
-      background: url('../img/landing.jpeg');
+      background: url('../img_min/landing.jpeg');
     }
 
     .primary-heading {
@@ -133,7 +133,7 @@ body {
 
 @media (min-width: 1200px) {
   .landing {
-    background: url('../img/landing.jpeg') center;
+    background: url('../img_min/landing.jpeg') center;
     background-size: cover;
   }
 }

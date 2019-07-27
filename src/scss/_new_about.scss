@@ -1,5 +1,5 @@
 .about {
-  background: url('/img/dust_scratches.png');
+  background: url('/img_min/dust_scratches.png');
 }
 
 .about-info {
@@ -45,7 +45,7 @@
     width: 100%;
     height: 220px;
 
-    background: url('/img/card.jpg');
+    background: url('/img_min/card.jpg');
     background-color: black;
     background-size: cover;
     cursor: pointer;
@@ -54,11 +54,11 @@
     box-shadow: 0 0 5px #000;
   }
   .card-body.second-card {
-    background: url('/img/card1.jpg');
+    background: url('/img_min/card1.jpg');
     background-size: cover;
   }
   .card-body.third-card {
-    background: url('/img/card2.jpg');
+    background: url('/img_min/card2.jpg');
     background-size: cover;
   }
   .overlay {
@@ -215,7 +215,7 @@
       width: 230px;
       height: 270px;
 
-      background: url('/img/card.jpg');
+      background: url('/img_min/card.jpg');
       background-color: black;
       background-size: cover;
       cursor: pointer;
@@ -224,11 +224,11 @@
       box-shadow: 0 0 5px #000;
     }
     .card-body.second-card {
-      background: url('/img/card1.jpg');
+      background: url('/img_min/card1.jpg');
       background-size: cover;
     }
     .card-body.third-card {
-      background: url('/img/card2.jpg');
+      background: url('/img_min/card2.jpg');
       background-size: cover;
     }
     .overlay {
@@ -284,7 +284,7 @@
   .about-image {
     display: block;
     opacity: 0.8;
-    background: url('/img/pexels-photo-1865728.jpeg');
+    background: url('/img_min/pexels-photo-1865728.jpeg');
     height: calc(100vh - 7rem);
     width: 30vw;
     background-size: cover;
