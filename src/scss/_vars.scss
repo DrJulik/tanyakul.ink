@@ -1,0 +1,13 @@
+$primary-color: rgb(42, 69, 75);
+$font-color: rgb(19, 19, 19);
+$sec-font-color: rgb(65, 65, 65);
+$menu-overlay: rgba(33, 41, 43, 0.4);
+$main-font: 'Cinzel', serif;
+$headings-font: 'Merriweather', serif;
+$body-font: 'Roboto', sans-serif;
+$nav-color: #d0dbd2;
+$body-color: #f8eceb;
+
+@mixin easeOut {
+  transition: all 0.5s ease-in-out;
+}

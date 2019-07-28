@@ -1,0 +1,127 @@
+@import 'vars';
+@import 'gallery';
+@import 'new_about';
+@import 'new_contact';
+
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+.menu-wrapper {
+  overflow: hidden;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  .bottom-bar {
+    height: 15vh;
+    background: $menu-overlay;
+    position: relative;
+    top: 85%;
+
+    h1 {
+      font-size: 3.9rem;
+      font-family: $main-font;
+      text-align: center;
+      text-shadow: 2px 2px #000;
+      color: rgb(224, 224, 224);
+      margin: 0;
+      padding: 2rem 2rem 3rem 2rem;
+    }
+  }
+
+  .mobile-text {
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .menu-gallery {
+    height: 100%;
+    background-image: url('../img/gallery1.jpg');
+    background-size: cover;
+    background-position: center;
+
+    &:hover {
+      @include easeOut();
+      opacity: 0.9;
+    }
+  }
+  .menu-about {
+    height: 100%;
+    background-image: url('../img/about1.jpg');
+    background-size: cover;
+    background-position: center;
+
+    &:hover {
+      @include easeOut();
+      opacity: 0.9;
+    }
+  }
+  .menu-contact {
+    background-image: url('../img/contact.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+
+    &:hover {
+      @include easeOut();
+      opacity: 0.9;
+    }
+  }
+}
+
+// bak to top btn
+.back-to-top {
+  display: none;
+  background: none;
+  margin: 0;
+  position: fixed;
+  bottom: 15px;
+  right: 0;
+  width: 70px;
+  height: 70px;
+  z-index: 100;
+  display: none;
+  text-decoration: none;
+  color: rgb(82, 82, 82);
+}
+
+.back-to-top i {
+  font-size: 55px;
+}
+
+@media (max-width: 700px) {
+  .menu-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    .bottom-bar {
+      display: none;
+    }
+
+    .mobile-text {
+      display: block;
+      font-size: 3rem;
+      font-family: $main-font;
+      text-align: center;
+      color: rgb(255, 255, 255);
+      text-shadow: 2px 2px #000;
+      margin: 0;
+      padding: 5rem 2rem;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .menu-wrapper {
+    .bottom-bar {
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+}

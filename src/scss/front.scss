@@ -1,0 +1,139 @@
+@import 'vars';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  font-family: 'Cinzel', serif;
+  font-size: 35px;
+  cursor: default;
+}
+
+.landing {
+  height: 100vh;
+  background-image: url('../img_min/landing_small2.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+
+  .primary-heading {
+    font-size: 2rem;
+    position: absolute;
+    top: 7%;
+    letter-spacing: 0.06em;
+    color: rgb(19, 19, 19);
+  }
+
+  .secondary-heading {
+    font-size: 1.8rem;
+    position: absolute;
+    top: 38%;
+    margin-bottom: 1rem;
+    color: rgb(65, 65, 65);
+    text-align: center;
+  }
+
+  .icons {
+    position: absolute;
+    bottom: 2%;
+    margin: 1rem 0;
+
+    a {
+      color: #9c4f49;
+      text-decoration: none;
+      font-size: 1.4rem;
+      margin: 0.5rem 0.5rem 0 0.5rem;
+
+      &:hover {
+        opacity: 0.7;
+        @include easeOut();
+      }
+    }
+  }
+
+  // THE BUTTON
+
+  .main-button {
+    position: absolute;
+    padding: 1rem;
+    width: 12rem;
+    bottom: 13%;
+    font-size: 1.8rem;
+    font-family: 'Cinzel', cursive;
+    background: rgb(156, 79, 73);
+    border-radius: 15%;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 1rem;
+
+    &:hover {
+      opacity: 0.7;
+      @include easeOut();
+    }
+  }
+
+  // tablet fixes
+  @media (min-width: 760px) {
+    .primary-heading {
+      font-size: 3.4rem;
+      top: 4%;
+    }
+
+    .secondary-heading {
+      font-size: 3rem;
+      top: 35%;
+      line-height: 1.3em;
+    }
+
+    .main-button {
+      font-size: 2.5rem;
+    }
+
+    .icons a {
+      font-size: 2rem;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .landing {
+      background: url('../img_min/landing.jpeg');
+    }
+
+    .primary-heading {
+      font-size: 5.5rem;
+      top: 5%;
+    }
+
+    .secondary-heading {
+      font-size: 4rem;
+      top: 20%;
+    }
+
+    .main-button {
+      font-size: 2.5rem;
+      padding: 1rem 2rem;
+      bottom: 25%;
+    }
+
+    .icons {
+      bottom: 10%;
+    }
+
+    .icons a {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .landing {
+    background: url('../img_min/landing.jpeg') center;
+    background-size: cover;
+  }
+}
