@@ -203,10 +203,11 @@ textarea:hover {
     background-position-x: 80%;
 
     .bottom-bar {
-      height: 15vh;
+      height: 13vh;
       background: rgba(37, 54, 58, 0.6);
       position: relative;
-      top: 85%;
+      top: calc(100%-13vh);
+      left: 0;
 
       h1 {
         font-family: $main-font;
@@ -214,7 +215,7 @@ textarea:hover {
         font-size: 2.7rem;
         color: #f1f1f1;
         position: absolute;
-        bottom: 25%;
+        bottom: 5%;
         left: 23%;
       }
     }
