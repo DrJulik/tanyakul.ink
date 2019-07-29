@@ -193,7 +193,7 @@
     height: 100%;
     display: grid;
     grid-template-columns: 30vw 70vw;
-    grid-template-rows: 40vh 60vh;
+    grid-template-rows: 35vh 60vh;
     grid-template-areas:
       'about-image-lg about-text'
       'about-image-lg about-cards';
@@ -285,7 +285,7 @@
     display: block;
     opacity: 0.8;
     background: url('/img_min/pexels-photo-1865728.jpeg');
-    height: calc(100vh - 7rem);
+    height: calc(100vh-7rem);
     width: 30vw;
     background-size: cover;
     background-repeat: no-repeat;
