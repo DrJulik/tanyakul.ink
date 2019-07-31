@@ -17,7 +17,7 @@ const paths = {
 };
 gulp.task('minify', () =>
   gulp
-    .src('src/img/*')
+    .src('src/img/**')
     .pipe(imagemin())
     .pipe(gulp.dest('src/img_min'))
 );
