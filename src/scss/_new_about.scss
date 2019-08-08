@@ -10,6 +10,8 @@
 
   .mobile-image {
     width: 100%;
+    border-radius: 30%;
+    box-shadow: rgba(122, 122, 122, 0.5) 1px 1px 3px;
     height: 18rem;
     grid-area: about-image-sm;
   }
